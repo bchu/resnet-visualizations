@@ -1,1 +1,3 @@
 *.caffemodel
+deep-visualization-toolbox/*
+!deep-visualization-toolbox/settings_local.py
