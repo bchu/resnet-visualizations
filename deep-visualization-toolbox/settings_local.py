@@ -6,14 +6,14 @@
 
 
 # Set this to point to your compiled checkout of caffe
-caffevis_caffe_root      = '/Users/daylenyang/caffe'
+caffevis_caffe_root      = '/Users/brian/caffe'
 
 # Load model: bvlc-googlenet
 # Path to caffe deploy prototxt file. Minibatch size should be 1.
-caffevis_deploy_prototxt = '/Users/daylenyang/resnet-visualizations/prototxt/ResNet-50-deploy.prototxt'
+caffevis_deploy_prototxt = '../prototxt/ResNet-50-deploy.prototxt'
 
 # Path to network weights to load.
-caffevis_network_weights = '/Users/daylenyang/resnet-visualizations/caffe/ResNet-50-model.caffemodel'
+caffevis_network_weights = '../resnet-visualizations/caffe/ResNet-50-model.caffemodel'
 
 # Other optional settings; see complete documentation for each in settings.py.
 caffevis_data_mean       = (104, 117, 123)   # per-channel mean
