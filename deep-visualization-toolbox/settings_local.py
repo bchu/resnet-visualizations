@@ -1,3 +1,9 @@
+# This disables Caffe logging
+import os
+key = 'GLOG_minloglevel'
+if not os.environ.get(key, ''):
+    os.environ[key] = '3'
+
 # Define critical settings and/or override defaults specified in
 # settings.py. Copy this file to settings_local.py in the same
 # directory as settings.py and edit. Any settings defined here
@@ -16,7 +22,7 @@ caffevis_deploy_prototxt = '%DVT_ROOT%/../prototxt/ResNet-50-deploy.prototxt'
 caffevis_network_weights = '%DVT_ROOT%/../caffe/ResNet-50-model.caffemodel'
 
 # Other optional settings; see complete documentation for each in settings.py.
-caffevis_data_mean       = (104, 117, 123)   # per-channel mean
+caffevis_data_mean       = '%DVT_ROOT%/../caffe/ResNet_mean.npy'   # image mean
 caffevis_labels          = '%DVT_ROOT%/models/bvlc-googlenet/ilsvrc_2012_labels.txt'
 caffevis_jpgvis_layers   = []
 caffevis_prob_layer      = 'prob'

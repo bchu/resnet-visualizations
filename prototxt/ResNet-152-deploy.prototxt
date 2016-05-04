@@ -1,4 +1,5 @@
 name: "ResNet-152"
+force_backward: true
 input: "data"
     input_shape {
     dim: 1
