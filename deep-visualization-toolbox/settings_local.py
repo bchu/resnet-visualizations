@@ -12,7 +12,7 @@ if not os.environ.get(key, ''):
 
 
 # Set this to point to your compiled checkout of caffe
-caffevis_caffe_root      = '/Users/brian/caffe'
+caffevis_caffe_root      = '/home/bchu/caffe'
 
 # Load model: bvlc-googlenet
 # Path to caffe deploy prototxt file. Minibatch size should be 1.
